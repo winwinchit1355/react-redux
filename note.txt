@@ -1,0 +1,10 @@
+npm i redux react-redux redux-thunk
+
+redux process
+->actionReducers (login account users)
+->reducer (action combine)
+->store 
+->actions
+->actionCreater (action combine)
+
+redux-tookit, redux template
