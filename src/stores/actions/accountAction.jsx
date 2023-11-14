@@ -16,4 +16,22 @@ export const remove = (amount) => {
         });
     }
 }
+
+export const insert = (user) =>{
+    return (dispatch) =>{
+        dispatch({
+            type:"insert",
+            payload:user,
+        });
+    }
+}
+
+export const destroy = (user) =>{
+    return (dispatch) =>{
+        dispatch({
+            type:"destroy",
+            payload:user,
+        });
+    }
+}
     
