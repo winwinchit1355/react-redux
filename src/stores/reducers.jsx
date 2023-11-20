@@ -1,3 +1,4 @@
+import {combineReducers} from "redux";
 const loginReducer = (state = false,action) =>{
     switch(action.type){
         case "login":
@@ -8,4 +9,10 @@ const loginReducer = (state = false,action) =>{
             return state;
     }
 }
-export default loginReducer;
+
+
+const reducers = combineReducers({
+    loggedIn : loginReducer
+});
+
+export default reducers;
